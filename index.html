@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+
+    <!-- Email Sending -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init("-rOwDRPeZ_OG6Wm0t");
+    })();
+    </script>
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="navImage">Portfolio</div>
+        <div id="navitems">
+            <a href="#header" class="navitems">home</a>
+            <a href="#about" class="navitems">About</a>
+            <a href="#Projects" class="navitems">Project's</a>
+            <a href="#contact" class="navitems">Contact</a>
+            <div class="navitems" id="navsearch">
+                <input type="text" id="navsearchs" >
+                <img src="./images/search-icon.svg" id="navbtn" onclick="land()" alt="">
+            </div>
+        </div>
+    </nav>
+    <!-- header page header section -->
+    <section class="container">
+        
+    <header class="header" id="header">
+       
+        
+        <div id="headercontent">
+            <img id="headerImage" src="./images/ownerImage.jpg" alt="">
+            <div id="nameheader">
+                <p>Hi, I am  <span>Sonu Singh</span> </p>
+                <p>Full Stack Developer</p>
+            </div>
+        </div>
+    </header>
+</section>
+
+<!-- About section -->
+<section id="about">
+    <div class="about" >
+    <h2 id="aboutheading">Qualification</h2>
+    <div id="class10">
+         <img src="./images/class10th.jpeg" alt="">
+         <div class="class10content">
+            <h3>Class 10th</h3>
+            <p>CBSE 2018-2019</p>
+            <p>Percentage-51%</p>
+            <p>I have passed my class 10th from <span>NR Public School</span> in the year of 2019.</p>
+            <p>Kasganj Uttar Pradesh (207245) </p>
+         </div>
+    </div>
+
+    <div id="class12">
+        <img src="./images/class12th.jpeg" alt="">
+        <div class="class12content">
+           <h3>Class 12th</h3>
+           <p>CBSE 2020-2021</p>
+           <p>Percentage-58%</p>
+           <p>I have passed my class 10th from <span>SJS Public School</span> in the year of 2021.</p>
+           <p>Kasganj Uttar Pradesh (207245) </p>
+        </div>
+   </div>
+
+   <!-- BCA Section -->
+   <div id="BCA">
+    <img src="./images/BCA.jpeg" alt="">
+    <div class="BCAcontent">
+       <h3>BCA</h3>
+       <p>CCSU 2021-2024</p>
+       <p>Percentage-72%</p>
+       <p>Currently I'm persuing BCA from <span>GNIOT Institute of Professional Studies .</span></p>
+       <p>Greater Noida (Gautam Buddh nagar) (201308)</p>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- Project's section -->
+<section id="Projects">
+    <div class="projects" >
+    <h2 id="projectheading">Project's</h2>
+    <div id="project1">
+         <img src="./images/tour.PNG" alt="">
+         <div class="project1content">
+            <h3>Yatri.com</h3>
+            <p>Project</p>
+            <p>I have created this project using <span>HTML, CSS, Java Script.</span></p>
+            <p>Aim of this project is to deep understanding the EmailJS for sending mail whithout leaving page.</p>
+            <p><a href="https://hilarious-cendol-a8860c.netlify.app">Explore Now</a></p>
+         </div>
+    </div>
+
+    <div id="project2">
+        <img src="./images/RozarPay.png" alt="">
+        <div class="project2content">
+           <h3>RozarPay Clone</h3>
+           <p>Project</p>
+           <p>I have created this clone Project Using <span>HTML & Tailwind Css.</span></p>
+           <p>Aim of this project to deep understanding of tailwind Css and advance concept of html.</p>
+           <p><a href="https://verdant-gingersnap-9540c5.netlify.app/">Explore Now</a></p>
+        </div>
+   </div>
+
+   <!-- BCA Section -->
+   <div id="project3">
+    <img src="./images/paytm.png" alt="">
+    <div class="project3content">
+       <h3>Paytm Clone</h3>
+       <p>project</p>
+       <p>I have created this Project using <span>HTML & Tailwind css .</span></p>
+       <p>Aim of this project to more explore the tailwind css positioning concept and animation concept.</p>
+       <p><a href="https://stirring-kangaroo-2a3295.netlify.app/">Explore Now</a></p>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- Contact section -->
+<section class="contact" id="contact">
+    <h2>Contact</h2>
+    <form  action="#contact" id="contactitem" onsubmit="sendMail()">
+        <input type="text" class="input"  placeholder="Name" name="name" id="Name" required>
+        <input type="email" class="input"  placeholder="Email Address" required name="email" pattern=".+@gmail\.com" id="Email">
+        <input type="phone" class="input"  placeholder="Phone" name="phone" required id="Phone">
+        <input type="text" class="input"  placeholder="Subject" name="subject" required id="Subject">
+        <!-- <div class="submit" onclick="sendMail()">Submit</div> -->
+        <div><button type="submit" id="submitbtn">Submit</button></div>
+    </form>
+</section>
+
+<footer>
+    <section class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#header">header</a>    
+                <a href="#about">About</a>
+                <a href="#Projects">Project's</a>
+            </div>
+    
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#contact">ask questions</a>
+                <a href="#">terms of use</a>
+                <a href="#">privacy policy</a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="tel:+919568157590" class="anchtranslate"> <i class="fas fa-phone"></i> +919568157590 </a>
+                <a href="mailto: sonusin3435@gmail.com" class="anchtranslate"> <i class="fas fa-envelope"></i>sonusin3435@gmail.com </a>
+                <a href="#"> <i class="fas fa-map" class="anchtranslate"></i> Greater Noida, india - 201308 </a>
+            </div>
+    
+            <div class="box">
+                <h3>follow us</h3>
+                <!-- <a href="https://www.facebook.com/yash.srivastav0"> <i class="fab fa-facebook-f"></i> facebook </a> -->
+                <a href="https://www.instagram.com/sonu26800/" class="anchtranslate" target="_blank"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="https://www.linkedin.com/in/sonu-singh-470023241/" class="anchtranslate" target="_blank"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="https://github.com/sonu3435" target="_blank" class="anchtranslate"> <i class="fab fa-github"></i> github </a>
+            </div>
+        </div>
+        <div class="credit">created by <span>Sonu Singh</span> | all rights reserved!</div>
+    </section>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
